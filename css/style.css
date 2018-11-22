@@ -1,0 +1,721 @@
+/*generic styling*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0px solid green; 
+}
+
+html, body{
+    color: black;
+    background-color: #FBFBFB;
+    font-family: Consolas;
+    font-weight: 100;
+    text-transform: capitalize
+}
+
+.vh{
+    position: relative;
+    top: 80px;
+    margin: 0px 0px 100px 0px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 1000;
+    color: white;
+    background-color: #04a7c0;
+    padding: 24px;
+    border-radius: 5px 5px 0px 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+/*@media all and (max-width: 1024px){
+    .navigation{
+        display: block;
+        background-color: #07b0ca;
+        width: 100%;
+        position: relative;
+        text-align: left;
+    }
+
+    ul.navigation li{
+        display: block;
+        width: 100%;
+        float: left;
+        border: 1px solid red;
+    }
+
+    #topbar{
+        position: relative;
+    }
+}*/
+/*generic styling*/
+
+/*style for icon*/
+#logo{
+    display: block;
+    margin: 10px 0px 0px 0px;
+    width: 50px;
+    box-shadow: 2px 3px 2px 0px rgba(68, 68, 68, 0.1);
+    border-radius: 10px;
+}
+
+/*style for top bar*/
+#topbar{
+    display: block;
+    width: 100%;
+    background: linear-gradient(to left, #07b0ca 10%, #02ddff);
+    box-shadow: 0px 1px 5px 0px rgb(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0px;
+    z-index: 2000;
+    /*height: 70px;*/
+}
+
+#sliderarea{
+    display: block;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url('../images2/diversity.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+    width: 100%;
+    position: relative;
+    /*top: 70px;*/
+    margin: 70px 0px 0px 0px;
+}
+
+div.welcome-area{
+    display: block;
+    position: relative;
+    top: 300px;
+    color: #fff;
+    text-align: center;
+    width: inherit;
+    text-transform: uppercase;
+    background-color: rgb(0, 0, 0, 0.3);
+    padding: 10px;
+    font-family: Century Gothic;
+}
+
+h1#change{
+    background-color: initial;
+    font-size: 100px;
+    animation-name: fade;
+    animation-duration: 1900ms;
+    animation-iteration-count: infinite;
+    animation-direction: ;
+}
+
+@keyframes fade{
+    0%{
+        opacity: 0.2;
+    }
+    /*50%{
+        opacity: 0.6;
+    }*/
+    100%{
+        opacity: 1
+    }
+}
+
+div.welcome-area > p{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+/*style for navigation*/
+.navigation{
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+}
+
+ul.navigation li{
+    display: inline-block;
+    list-style-type: none;
+    position: relative;
+}
+
+ul.navigation li ul{
+    display: none;
+    position: absolute;
+    width: 150px;
+    background-color: #07b0ca;
+    padding: 5px 0px 15px 0px;
+    border-radius: 0px 0px 4px 4px;
+    z-index: 1000;
+    text-align: center;
+    box-shadow: 0px 3px 5px 0px rgb(0, 0, 0, 0.2);
+}
+
+ul.navigation li:hover ul{
+    display: block;
+}
+
+ul.navigation li ul li{
+    list-style-type: none;
+    width: 130px;
+    text-align: center;
+}
+
+ul.navigation li ul li a:hover{
+    color: #07b0ca;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 9px 1px rgba(61, 61, 61, 0.1);
+}
+
+ul.navigation li ul li a{
+    display: block;
+    width: inherit;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 0px;
+    border-radius: 4px;
+    padding: 10px 0px;
+    text-transform: uppercase;
+}
+
+ul.navigation > li > a{
+    display: block;
+    width: 150px;
+    padding: 10px;
+    line-height: 50px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+ul.navigation > li > a:hover{
+    background-color: rgb(0 ,0 ,0 , 0.2);
+    /*font-weight: 1000;*/
+    animation: changecolor;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+    @keyframes changecolor {
+        from{
+            background-color: rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255);
+        }to{
+            background-color: rgba(255, 255, 255, 0.5);
+            color: rgba(255, 255, 255);
+        } 
+    }
+
+
+/*style for services*/
+#services{
+    text-align: center;
+    /*background-color:rgb(0, 0, 0, 0.1);*/
+    /*padding: 40px 0px 60px 0px;*/
+
+}
+
+#services > h4{
+    margin: auto;
+}
+
+div.service{
+    width: 350px;
+    background: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.9)), url("../images2/assets-images-site-sb-lending-dual-image-with-heading-module-doctor_and_boy_640x400-CSX9715c652.jpg");
+    padding: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    margin: 40px 0px;
+    height: 350px;
+    border-radius: 4px;
+    transition-duration: 100ms;
+    transition-timing-function: linear;
+}
+
+section#services  h2{
+    border-bottom: 10px solid black;
+    background-color: inherit;
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 40px;
+}
+
+div.service > h4{
+    background-color: rgba(0, 0, 0, 0.5);
+    font-variant: small-caps;
+    margin: 0px 0px 24px 0px;
+    border-radius: 5px;
+}
+
+div.service > p > a{
+    display: block;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #fff;
+    margin: auto;
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    position: relative;
+    top: 50px;
+}
+
+div.service > p > a:hover{
+    background-color: rgba(255, 255, 255, 0.9);
+    color: rgb(0, 0, 0, 0.9);
+}
+
+div.service:hover{
+    transform: scale(1.1, 1.1);
+    box-shadow: 0px 10px 15px 0px rgba(121, 121, 121, 0.3);
+    background: linear-gradient(rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.7)), url("../images2/assets-images-site-sb-lending-dual-image-with-heading-module-doctor_and_boy_640x400-CSX9715c652.jpg");
+    background-position: center;
+}
+
+div.service > p{
+    font-size: 14px;
+}
+
+.service1{
+    background: linear-gradient(rgba(0, 217, 255, 0.2), rgb(0, 0, 0, 0.9)),url('../images2/pexels-photo-1170979.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 24px;
+    margin: 10px;
+    border-radius: 6px;
+    height: 600px;
+}
+
+.service1 h4{
+    background-color: rgb(0, 0, 0, 0.7);
+    font-variant: small-caps;
+    font-size: 25px;
+    width: 400px;
+    margin: auto;
+    border-radius: 4px;
+    margin-bottom: 40px;
+}
+
+/*style for call to action*/
+#calltoaction{
+    /*background: linear-gradient(120deg, rgb(4, 105, 105), rgb(105, 16, 4));*/
+    padding: 30px 0px 30px 0px;
+    color: #fff;
+    animation-name: wave;
+    animation-duration: 3s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes wave{
+    0% {background-color:rgb(4, 105, 105);}
+    10% {background-color:rgb(2, 139, 106);}
+    20% {background-color: rgb(4, 167, 107);}
+    30% {background-color: rgb(3, 146, 108);}
+    40% {background-color: rgb(0, 139, 109);}
+    50% {background-color: rgb(8, 143, 110);}
+    60% {background-color: rgb(6, 114, 111);}
+    70% {background-color: rgb(5, 126, 112);}
+    80% {background-color: rgb(1, 92, 113);}
+    90% {background-color: rgb(5, 136, 114);}
+    100% {background-color: rgb(2, 100, 115);}
+}
+
+#calltoaction p{
+    font-size: 25px;
+    text-align: center;
+}
+
+a#ctabtn{
+    display: inline-block;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+a#ctabtn:hover{
+    /*background-color: rgb(4, 105, 105, 1);
+    border: 2px solid rgb(4, 105, 105, 1);*/
+    animation-name: color;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    background-color: white;
+    color: rgb(4, 105, 105);
+}
+
+    @keyframes color {
+        from{
+            /*background-color: rgba(4, 105, 105, 1);
+            color: #fff;
+        }to{
+            background-color: #fff;
+            color: rgba(4, 105, 105, 1);*/
+        }
+    }
+
+
+/*style for form page*/
+div.form-wrapper{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+div#first-box{
+    border: 0px solid red;
+    width: 60%;
+    margin: 90px 0px 0px 0px;
+    padding: 10px;
+}
+
+div#first-box > span{
+    color: #07b0ca;
+}
+
+div.cont{
+    margin: 0px;
+    border: 0px solid #07b0ca;
+    box-shadow: 0px 2px 15px 0px rgba(128, 128, 128, 0.25);
+    padding: 24px 50px;
+    background-color: #fff;
+    border-radius: 0px 0px 10px 10px;
+}
+
+input[type="submit"]{
+    display: block;
+    background-color: #07b0ca;
+    text-align: center;
+    height: 50px;
+    width: 150px;
+    color: #fff;
+    border: none;
+    margin: auto;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+input[type="submit"]:hover{
+    background-color: #fff;
+    color: #07b0ca;
+    font-weight: 1000;
+    border: 1px solid #07b0ca;   
+}
+
+input[type="submit"]:active{
+    background-color: rgb(223, 222, 222);  
+}
+
+input[type="text"], input[type="email"], input[type="phone"] {
+    display: block;
+    height: 50px;
+    width: 100%;
+    color: rgb(78, 78, 78);
+    border-bottom: 1px solid #07b0ca;
+    /*box-shadow: 0px 0px 2px 0px rgb(7, 176, 202, 0.5);*/
+    margin: auto;
+    padding: 0px 0px 0px 20px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="phone"]:focus, div#passport:focus {
+    border-bottom:4px solid #07b0ca;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+
+}
+
+div#passport{
+    display: block;
+    height: 180px;
+    padding: 20px;
+    width: 200px;
+    font-size: 10px;
+    overflow: hidden;
+    margin: 0px 0px 30px 0px;
+    border-radius: 4px;
+    border: 1px solid #07b0ca;
+}
+
+
+div.cont div{
+    margin: 15px 0px 0px 0px;
+}
+
+input[type="time"] {
+    display: block;
+    /*background-color: #07b0ca;*/
+    border-bottom: 1.5px solid #07b0ca;
+    color: #07b0ca;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+input[type="time"]:focus {
+    border-bottom: inset 0px 0px 3px 0px rgb(7, 176, 202, 0.3);
+    background-color: #fff;
+    color: #07b0ca;  
+}
+
+input[type="date"]{
+    background-color: #07b0ca;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+}
+
+input{
+    width: 100%;
+    outline: none;
+    height: 50px;
+}
+
+label{
+    color: rgb(78, 78, 78);
+}
+
+select{
+    width: 100%;
+    height: 300px;
+    color: #fff;
+    background: rgb(7, 176, 202, 0.5);
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+option{
+    padding: 5px 10px;
+}
+
+option:hover{
+    background-color: #fff;
+    color: #07b0ca;
+}
+
+textarea{
+    width: 100%;
+    height: 250px;
+    overflow: auto;
+    padding: 20px;
+    outline: none;
+}
+
+#credentials{
+    height: 200px;
+    width: 100%;
+    border: none;
+    background: rgb(7, 176, 202, 0.9);
+    color: #fff;
+    padding: 10px;
+}
+
+#cred{
+    height: 250px;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #07b0ca;
+    border-bottom: 5px solid rgb(7, 176, 202);
+}
+
+#cred > label{
+    color: #07b0ca;
+}
+
+/*style for aboutus page*/
+section.aboutus h2{
+    background-color: rgb(2, 176, 202);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 25px;
+    margin: 30px 0px 0px 0px;
+    text-transform: uppercase;
+}
+
+section.aboutus p{
+    border: 10px solid rgb(0, 0, 0, 0.9);
+    padding: 10px 30px;
+    line-height: 1cm;
+    text-align: justify;
+}
+
+section.aboutus p::first-letter{
+    font-size: 50px;
+    font-weight: bold;
+    padding: 10px;
+    clear: left;
+    word-wrap: break-word;
+}
+
+.doctor-heading{
+    text-align: left;
+    background-color: inherit;
+    color: #000;
+    font-variant: small-caps;
+    border-left: 20px solid #000;
+    border-bottom: 20px solid #000;
+    border-radius: 0px;
+}
+
+div.doctors{
+    border: 0px solid red;
+    padding: 24px;
+    color: #fff;
+    font-variant: small-caps;
+}
+
+div.doctors div p{
+    position: absolute;
+    top: 170px;
+    padding: 12px 24px;
+}
+
+div.doctors div p span.title{
+    color: #fff;
+    padding: 0;
+    text-decoration: underline;
+}
+
+div.doctors div{
+    border: 0px solid red;
+    margin: 0px 10px 10px 15px;
+    width: 250px;
+    height: 250px;
+}
+
+div.doctors div:nth-child(1){
+    background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.8)), url("../images2/999519.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    position: relative;
+    transition-duration: 900ms;
+}
+
+div.doctors div:nth-child(2){
+    background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.8)), url("../images2/sizedbest-black-doc-pic.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    position: relative;
+    transition-duration: 900ms;
+}
+
+div.doctors div:nth-child(3){
+    background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.8)), url("../images2/BE_female-doctor-natural-hair-shutterstock.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    position: relative;
+    transition-duration: 900ms;
+}
+
+div.doctors div:nth-child(4){
+    background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.8)), url("../images2/find-doctors-talking-16.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    position: relative;
+    transition-duration: 900ms;
+}
+
+div.doctors div:nth-child(1):hover{
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.5)), url("../images2/999519.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(1deg);
+}
+
+div.doctors div:nth-child(2):hover{
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.5)), url("../images2/sizedbest-black-doc-pic.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(-1deg);
+}
+
+div.doctors div:nth-child(3):hover{
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.5)), url("../images2/BE_female-doctor-natural-hair-shutterstock.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(1deg);
+}
+
+div.doctors div:nth-child(4):hover{
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.5)), url("../images2/find-doctors-talking-16.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(-1deg);
+}
+
+
+/*style for footer*/
+.footer-content, .footer{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 13px;
+    text-transform: capitalize;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+}
+
+.footer-content{
+    padding: 30px;
+}
+
+.feet li{
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+} 
+
+.feet li a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+} 
+
+.feet a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    display: block;
+} 
+
+hr{
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+
+.feet p, span{
+    padding-left: 10px;
+    color: gray;
+}
+
+div#foote{
+    padding-top: 0px;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recruitpage</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+    <section id="topbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <a href="index.html">
+                        <img src="iconlogos/pax11.png" id="logo"/>
+                    </a>
+                </div>
+
+                <div class="col-lg-9">
+                    <ul class="navigation pull-right">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="appointments.html">appointments</a></li>
+                        <li><a href="aboutus.html">About us</a></li>
+                        <li>
+                            <a href="#">work with us</a>
+                            <ul>
+                                <li><a href="recruitpage.html?name=intern" target="_blank">intern</a></li>
+                                <li><a href="recruitpage.html?name=resident" target="_blank">resident</a></li>
+                                <li><a href="recruitpage.html?name=consultant" target="_blank">consultant</a></li>
+                                <li><a href="recruitpage.html?name=paramedic" target="_blank">paramedic</a></li>
+                                <li><a href="recruitpage.html?name=medic" target="_blank">medic</a></li>
+                                <li><a href="recruitpage.html?name=non-medic staff" target="_blank">non-medic staff</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="vh">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="form-wrapper">
+                        <form action="" id="form2" onclick="submit" method="post">
+                            <div>
+                                <h3 id="headingchange">Hello, let's get to know you.</h3>
+                            </div>
+                            <div class='cont'>
+                                <div id="passport" class="pull-right">
+                                    <input type="file" name="fileupload" value="" id="fileupload"><br>
+                                    <label>upload your passport-sized photo.</label><br>
+                                    <label>your photo should not be more than 300KB in size.</label>
+                                </div>
+                                <div id="first-box">
+                                    <label>intern</label>
+                                    <input type="radio" name="staff" value="intern" class="check">
+                                    <label>resident</label>
+                                    <input type="radio" name="staff" value="resident" class="check">
+                                    <label>medic</label>
+                                    <input type="radio" name="staff" value="medic" class="check">
+                                    <label>para-medic</label>
+                                    <input type="radio" name="staff" value="para-medic" class="check">
+                                    <label>non-medic staff</label>
+                                    <input type="radio" name="staff" value="non-medic staff" class="check">
+                                    <label>consultant</label>
+                                    <input type="radio" name="staff" value="consultant" class="check">
+                                    <span>*check one of these as an indicator to your interest*</span>
+                                </div>
+                                <div>
+                                    <input type="text" name="full name" value="" id="name" placeholder="full name*">
+                                </div>
+                                <div>
+                                    <input type="email" name="email" value="" id="email" placeholder="email">
+                                </div>
+                                <div>
+                                    <input type="phone" name="phone" value="" id="phone" placeholder="phone number*">
+                                </div>
+                                <div>
+                                    <label>male</label>
+                                    <input type="radio" name="gender" value="male" id="radio" checked="checked">
+                                    <label>female</label>
+                                    <input type="radio" name="gender" value="female" id="radio" checked="">
+                                </div>
+                                <div>
+                                    <label>select specialization</label><br>
+                                    <select name="specialization" size="6">
+                                        <option value="" disabled selected>--select specialist--</option>
+                                        <optgroup label="surgical medecine">
+                                            <option value="general surgery">general surgery</option>
+                                            <option value="paediatric surgery">paediatric surgery</option>
+                                            <option value="orthopaedic surgery">orthopaedic surgery</option>
+                                            <option value="cardiological cardiological">cardiological surgery</option>
+                                            <option value="neuorological surgery">neuorological surgery</option>
+                                            <option value="urological surgery">urological surgery</option>
+                                        </optgroup>
+
+                                        <optgroup label="medical outpatient">
+                                            <option value="endocrinology">endocrinology</option>
+                                            <option value="cardiology">cardiology</option>
+                                            <option value="respiratory medecine">respiratory medecine</option>
+                                            <option value="neurology">neurology</option>
+                                            <option value="oncology">oncology</option>
+                                        </optgroup>
+
+                                        <optgroup label="ANC">
+                                            <option value="Ante-natal medecine">Ante-natal medecine</option>
+                                        </optgroup>
+
+                                        <optgroup label="gyneacology">
+                                            <option value="gyneacology">gyneacology</option>
+                                        </optgroup>
+
+                                        <optgroup label="paediatrics">
+                                            <option value="endocrinology">endocrinology</option>
+                                            <option value="cardiology">cardiology</option>
+                                            <option value="respiratory medecine">respiratory medecine</option>
+                                            <option value="neurology">neurology</option>
+                                            <option value="oncology">oncology</option>
+                                        </optgroup>
+
+                                        <optgroup label="clinic">
+                                            <option value="clinical physiology">clinical physiology</option>
+                                            <option value="socail services">social services</option>
+                                        </optgroup>
+
+                                        <optgroup label="other">
+                                            <option value="pysiotherapy">physiotherapy</option>
+                                            <option value="radiology">radiology</option>
+                                            <option value="laboratory services">laboratory services</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+
+                                <div id="cred">
+                                    <input type="file" name="credetianls" id="credentials"><br>
+                                    <label>*upload all credentials necessary to your scope and education.*</label>
+                                </div>
+
+                                <div>
+                                    <textarea placeholder="tell us quite a bit about yourself, your medical education and your medical experiences so far. dont leave out the small victories in big places you've had."></textarea>
+                                </div>
+                                <div>
+                                    <p id="message">
+
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <input type="submit" value="submit">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 feet">
+                    <ul>
+                       <li><a>about</a></li>
+                       <li><a>services</a></li>
+                       <li><a>content</a></li>
+                       <li><a>F.A.Q's</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 feet">
+                    <ul>
+                       <li><a>facebook</a></li>
+                       <li><a>twitter</a></li>
+                       <li><a>linkedin</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 feet">
+                    <a href="#">Address</a>
+                        <p>
+                            no 11 Karimu street,<br>
+                            off Ojuelegba under bridge,<br>
+                            surulere, Ojuelegba<br>
+                            lagos
+                        </p>
+                    <a href="#">phone<span>+23480-321-3210</span></a>
+                    <a href="#">email<span>clinic@info.com</span></a>
+                </div>           
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" id="foote">
+                    &copy; copyright 2018. All rights reserved.
+                </div>           
+            </div>
+        </div>
+    </section>
+    <script src="scripts/formvalidation.js"></script>
+    <script src="scripts/recruitpage.js"></script>
+    <script src="scripts/welcomerecruit.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
